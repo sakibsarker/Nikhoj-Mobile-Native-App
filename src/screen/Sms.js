@@ -101,50 +101,27 @@ const styles=StyleSheet.create({
     fontWeight:'300',
     borderBottomWidth:1,
     borderBottomColor:'#cccccc'
-
   },
-
-  // flex-direction: column;
-  // justify-content: center;
-  // padding: 15px;
-  // padding-left: 0;
-  // margin-left: 10px;
-  // width: 300px;
-  // border-bottom-width: 1px;
-  // border-bottom-color: #cccccc;
   userInfo:{
     flexDirection:'row',
     justifyContent:'space-between',
     marginBottom:5
 
   },
-  // flex-direction: row;
-  // justify-content: space-between;
-  // margin-bottom: 5px;
   Textusername:{
     fontSize:14,
     fontWeight:'bold'
 
   },
-  // font-size: 14px;
-  // font-weight: bold;
-  // font-family: 'Lato-Regular';
   postTime:{
     fontSize:12,
     color:'#666',
-
+    marginRight:50,
   },
-  // font-size: 12px;
-  // color: #666;
-  // font-family: 'Lato-Regular';
   SmsText:{
     fontSize:14,
-    color:'#333333'
-
+    color:'#333333',
   }
-
-  // font-size: 14px;
-  // color: #333333;
 })
 
 export default Sms
