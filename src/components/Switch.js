@@ -4,7 +4,7 @@ import React from 'react'
 
 const Switch = () => {
   const moder = [
-    { label: "Loser", value: "Loser" },
+    { label: "Lost", value: "Lost" },
     { label: "Getting", value: "Getting" },
   ];
   return(
