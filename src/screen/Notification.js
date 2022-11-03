@@ -8,7 +8,7 @@ const Notification = () => {
     post_title:'Hello Sakib',
     postimage:'https://cdn5.vectorstock.com/i/1000x1000/00/69/man-profile-cartoon-vector-19490069.jpg',
     post_city:'Dhaka',
-    username:'sakib',
+    username:'Salim Reja Joy',
     notification:'New post',
     time:'10:00 AM'
   },
@@ -17,36 +17,36 @@ const Notification = () => {
     post_title:'Who are you Sakib',
     postimage:'https://cdn5.vectorstock.com/i/1000x1000/00/69/man-profile-cartoon-vector-19490069.jpg',
     post_city:'Dhaka',
-    username:'sakib',
+    username:'Shekh Foysal',
     notification:'Liked your post',
-    time:'10:00 AM'
+    time:'10:50 AM'
   },
   {
     id:58,
     post_title:'Do you know me Sakib',
     postimage:'https://cdn5.vectorstock.com/i/1000x1000/00/69/man-profile-cartoon-vector-19490069.jpg',
     post_city:'Dhaka',
-    username:'sakib',
-    notification:'Share post',
-    time:'10:00 AM'
+    username:'Sakir Faruque',
+    notification:'Share a post',
+    time:'12:00 PM'
   },
   {
     id:58,
     post_title:'Do you know me Sakib',
     postimage:'https://cdn5.vectorstock.com/i/1000x1000/00/69/man-profile-cartoon-vector-19490069.jpg',
     post_city:'Dhaka',
-    username:'sakib',
-    notification:'Message',
-    time:'10:00 AM'
+    username:'Sakib Sarker',
+    notification:'Message you',
+    time:'11:00 AM'
   },
   {
     id:58,
     post_title:'Do you know me Sakib',
     postimage:'https://cdn5.vectorstock.com/i/1000x1000/00/69/man-profile-cartoon-vector-19490069.jpg',
     post_city:'Dhaka',
-    username:'sakib',
+    username:'Adiba Jaman',
     notification:'Liked your post',
-    time:'10:00 AM'
+    time:'09:00 PM'
   },
 
 ]
@@ -67,7 +67,7 @@ const Notification = () => {
                 <Text style={{color:'black'}}>{item.time}</Text>
                 </View>
                 <View>
-                  <Text style={{color:'black'}}>{item.notification}</Text>
+                  <Text style={{color:'black',marginLeft:10}}>{item.notification}</Text>
                 </View>
                 
               </View>
@@ -90,7 +90,9 @@ const styles=StyleSheet.create({
     padding:15,
     backgroundColor:'white',
     flexDirection:'row',
-    alignItems:'center'
+    alignItems:'center',
+    marginTop:5,
+    borderRadius:20,
   },
   Headerleft:{
     width:'100%',
@@ -100,7 +102,6 @@ const styles=StyleSheet.create({
   HeaderleftView:{
     width:40,
     height:40,
-    borderRadius:48/2,
     marginLeft:15,
   }
 })

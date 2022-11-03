@@ -1,5 +1,6 @@
 import { View, Text,StyleSheet,Dimensions,Image, ScrollView } from 'react-native'
 import React from 'react'
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const Card = () => {
 
@@ -9,6 +10,7 @@ const Card = () => {
       <View style={styles.cardContainer}>
       <Image style={styles.imageStyle} source={require('../Images/salam.jpg')} />
       <Text>One Post Card</Text>
+      <Ionicons name='location-sharp' color="#777777" size={25}/>
       </View>
     </View>
     <View style={styles.ViewAlien}>

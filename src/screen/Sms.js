@@ -1,4 +1,4 @@
-import { View, Text,Button,StyleSheet,FlatList,Image } from 'react-native'
+import { View, Text,StyleSheet,FlatList,Image,TouchableOpacity } from 'react-native'
 import React from 'react'
 
 const Messages = [
@@ -52,7 +52,7 @@ const Sms = ({navigation}) => {
       data={Messages}
       keyExtractor={item=>item.id}
       renderItem={({item})=>(
-        <View style={styles.container}>
+        <TouchableOpacity onPress={()=>navigation.navigate('Chat')}>
           <View style={{width:'100%'}}>
             <View style={{flexDirection:'row',justifyContent:'space-between'}}>
               <View style={{height:50,width:50}}>
@@ -60,14 +60,14 @@ const Sms = ({navigation}) => {
               </View>
               <View style={styles.textSection}>
                 <View style={styles.userInfo}>
-                 <Text style={styles.Textusername}>{item.userName}</Text>
+                 <Text onPress={()=>navigation.navigate('Chat')} style={styles.Textusername}>{item.userName}</Text>
                  <Text style={styles.postTime}>{item.messageTime}</Text>
                 </View>
                 <Text style={styles.SmsText}>{item.messageText}</Text>
               </View>
             </View>
-          </View>
         </View>
+        </TouchableOpacity>
       )
     }
       />
@@ -110,7 +110,8 @@ const styles=StyleSheet.create({
   },
   Textusername:{
     fontSize:14,
-    fontWeight:'bold'
+    fontWeight:'bold',
+    
 
   },
   postTime:{
