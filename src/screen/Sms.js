@@ -1,5 +1,12 @@
-import { View, Text,StyleSheet,FlatList,Image,TouchableOpacity } from 'react-native'
-import React from 'react'
+import {
+  View,
+  Text,
+  StyleSheet,
+  FlatList,
+  Image,
+  TouchableOpacity,
+} from 'react-native';
+import React from 'react';
 
 const Messages = [
   {
@@ -44,85 +51,85 @@ const Messages = [
   },
 ];
 
-
 const Sms = ({navigation}) => {
   return (
     <View style={styles.container}>
       <FlatList
-      data={Messages}
-      keyExtractor={item=>item.id}
-      renderItem={({item})=>(
-        <TouchableOpacity onPress={()=>navigation.navigate('Chat')}>
-          <View style={{width:'100%'}}>
-            <View style={{flexDirection:'row',justifyContent:'space-between'}}>
-              <View style={{height:50,width:50}}>
-                <Image style={styles.userImgWrap} source={item.userImg}/>
-              </View>
-              <View style={styles.textSection}>
-                <View style={styles.userInfo}>
-                 <Text onPress={()=>navigation.navigate('Chat')} style={styles.Textusername}>{item.userName}</Text>
-                 <Text style={styles.postTime}>{item.messageTime}</Text>
+        data={Messages}
+        keyExtractor={item => item.id}
+        renderItem={({item}) => (
+          <TouchableOpacity onPress={() => navigation.navigate('Chat')}>
+            <View style={{width: '100%'}}>
+              <View
+                style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+                <View style={{height: 50, width: 50}}>
+                  <Image style={styles.userImgWrap} source={item.userImg} />
                 </View>
-                <Text style={styles.SmsText}>{item.messageText}</Text>
+                <View style={styles.textSection}>
+                  <View style={styles.userInfo}>
+                    <Text
+                      onPress={() => navigation.navigate('Chat')}
+                      style={styles.Textusername}>
+                      {item.userName}
+                    </Text>
+                    <Text style={styles.postTime}>{item.messageTime}</Text>
+                  </View>
+                  <Text style={styles.SmsText}>{item.messageText}</Text>
+                </View>
               </View>
             </View>
-        </View>
-        </TouchableOpacity>
-      )
-    }
+          </TouchableOpacity>
+        )}
       />
     </View>
-  )
-}
+  );
+};
 
-const styles=StyleSheet.create({
-  userImgWrap:{
-    marginTop:10,
-    height:'100%',
-    width:'100%',
-    borderRadius:50,
+const styles = StyleSheet.create({
+  userImgWrap: {
+    marginTop: 10,
+    height: '100%',
+    width: '100%',
+    borderRadius: 50,
   },
-  Card:{
-    width:'100%'
+  Card: {
+    width: '100%',
   },
-  container:{
-    flex:1,
-    paddingLeft:10,
-    paddingRight:10,
-    alignItems:'center',
-    backgroundColor:'#ffffff',
+  container: {
+    flex: 1,
+    paddingLeft: 10,
+    paddingRight: 10,
+    alignItems: 'center',
+    backgroundColor: '#ffffff',
   },
-  textSection:{
-    flexDirection:'column',
-    justifyContent:'center',
-    padding:15,
-    paddingLeft:0,
-    marginLeft:10,
-    fontWeight:'300',
-    borderBottomWidth:1,
-    borderBottomColor:'#cccccc'
+  textSection: {
+    flexDirection: 'column',
+    justifyContent: 'center',
+    padding: 15,
+    paddingLeft: 0,
+    marginLeft: 10,
+    fontWeight: '300',
+    borderBottomWidth: 1,
+    borderBottomColor: '#cccccc',
   },
-  userInfo:{
-    flexDirection:'row',
-    justifyContent:'space-between',
-    marginBottom:5
+  userInfo: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 5,
+  },
+  Textusername: {
+    fontSize: 14,
+    fontWeight: 'bold',
+  },
+  postTime: {
+    fontSize: 12,
+    color: '#666',
+    marginRight: 50,
+  },
+  SmsText: {
+    fontSize: 14,
+    color: '#333333',
+  },
+});
 
-  },
-  Textusername:{
-    fontSize:14,
-    fontWeight:'bold',
-    
-
-  },
-  postTime:{
-    fontSize:12,
-    color:'#666',
-    marginRight:50,
-  },
-  SmsText:{
-    fontSize:14,
-    color:'#333333',
-  }
-})
-
-export default Sms
+export default Sms;
