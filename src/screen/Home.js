@@ -1,14 +1,28 @@
-import {View, SafeAreaView} from 'react-native';
-import React from 'react';
-import Card from '../components/Card';
-import Switch from '../components/Switch';
+import { SafeAreaView, StyleSheet, ScrollView } from 'react-native'
+import React from 'react'
+import Post from '../components/Post'
+import { POSTS } from '../../src/assets/dummy/posts'
 
-const Home = () => {
+import Header from '../components/Header'
+import Switch from '../components/Switch'
+
+
+const HomeScreen = ({ navigation }) => {
   return (
-    <View>
+    <SafeAreaView style={styles.container}>
+      <Header navigation={navigation} />
       <Switch />
-    </View>
-  );
-};
 
-export default Home;
+
+    </SafeAreaView>
+  )
+}
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: 'black',
+    flex: 1,
+  },
+})
+
+
+export default HomeScreen
