@@ -1,6 +1,6 @@
-import {View, Text} from 'react-native';
+import { View, Text } from 'react-native';
 import React from 'react';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -10,6 +10,7 @@ import Card from '../components/Card';
 import Notification from '../screen/Notification';
 import AccountStack from './AccountStack';
 import SmsStack from './SmsStack';
+import Post from '../components/Post';
 
 const TabNav = createBottomTabNavigator();
 
@@ -20,8 +21,8 @@ const HomeStack = () => {
         name="Home"
         component={Home}
         options={{
-          tabBarLabel: 'Home',
-          tabBarIcon: ({color, size}) => (
+          headerShown: false,
+          tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons
               name="home-circle-outline"
               color={color}
@@ -35,7 +36,7 @@ const HomeStack = () => {
         component={Notification}
         options={{
           tabBarLabel: 'Notification',
-          tabBarIcon: ({color, size}) => (
+          tabBarIcon: ({ color, size }) => (
             <Ionicons
               name="notifications-circle-outline"
               color={color}
@@ -46,10 +47,10 @@ const HomeStack = () => {
       />
       <TabNav.Screen
         name="Post"
-        component={Card}
+        component={Post}
         options={{
           tabBarLabel: 'Post',
-          tabBarIcon: ({color, size}) => (
+          tabBarIcon: ({ color, size }) => (
             <AntDesign name="pluscircleo" color={color} size={size} />
           ),
         }}
@@ -60,7 +61,7 @@ const HomeStack = () => {
         options={{
           headerShown: false,
           tabBarLabel: 'Message',
-          tabBarIcon: ({color, size}) => (
+          tabBarIcon: ({ color, size }) => (
             <Ionicons name="chatbubbles-outline" color={color} size={size} />
           ),
         }}
@@ -71,7 +72,7 @@ const HomeStack = () => {
         options={{
           headerShown: false,
           tabBarLabel: 'Account',
-          tabBarIcon: ({color, size}) => (
+          tabBarIcon: ({ color, size }) => (
             <Ionicons name="person-circle-outline" color={color} size={size} />
           ),
         }}

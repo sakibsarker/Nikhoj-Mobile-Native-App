@@ -1,11 +1,17 @@
 import React from 'react';
-import {View, StyleSheet, Text} from 'react-native';
+import { ScrollView } from 'react-native';
+import { View, StyleSheet, Text } from 'react-native';
+import { LostData, FoundData } from '../../assets/dummy/posts';
+import Card from '../Card';
+import Post from '../Post';
 
 const LostItems = () => {
   return (
-    <View>
-      <Text>Lost</Text>
-    </View>
+    <ScrollView>
+      {LostData.map((post, index) => (
+        <Post post={post} key={index} />
+      ))}
+    </ScrollView>
   );
 };
 
