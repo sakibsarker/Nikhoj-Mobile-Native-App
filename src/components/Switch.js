@@ -17,8 +17,8 @@ const Switch = () => {
           options={moder}
           initial={0}
           textColor={'black'} //'#7a44cf'
-          selectedColor={'white'}
-          buttonColor={'black'}
+          selectedColor={'black'}
+          buttonColor={'#f3f3f3'}
           onPress={() => setFound(prev => !prev)}
         />
       </View>

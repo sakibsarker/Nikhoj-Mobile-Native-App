@@ -53,9 +53,9 @@ const PostHeader = ({ post }) => (
                 source={{ uri: post.profile_picture }}
                 style={styles.postHeader}
             />
-            <Text style={{ color: 'white', fontWeight: '700', marginLeft: 5 }}>{post.user}</Text>
+            <Text style={{ color: 'black', fontWeight: '700', marginLeft: 5 }}>{post.user}</Text>
         </View>
-        <Text style={{ color: 'white', fontWeight: '900' }}>...</Text>
+        <Text style={{ color: 'black', fontWeight: '900' }}>...</Text>
     </View>
 )
 const PostImage = ({ post }) => (
@@ -100,7 +100,7 @@ const Icon = ({ imgStyle, imgUrl }) => (
 const Likes = ({ post }) => (
     <View style={{ flexDirection: 'row', marginTop: 2 }}>
         <Text
-            style={{ color: 'white', fontWeight: '700' }}>
+            style={{ color: 'black', fontWeight: '700' }}>
             {post.likes.toLocaleString('en')} likes
         </Text>
     </View>
@@ -109,9 +109,9 @@ const Likes = ({ post }) => (
 const Caption = ({ post }) => (
     <View style={{ marginTop: 4 }}>
         <Text>
-            <Text style={{ color: 'white', fontWeight: '700' }}>{post.user}
+            <Text style={{ color: 'black', fontWeight: '700' }}>{post.user}
             </Text>
-            <Text style={{ color: 'white', fontWeight: '500' }}> {post.caption}
+            <Text style={{ color: 'black', fontWeight: '500' }}> {post.caption}
             </Text>
 
         </Text>
@@ -134,7 +134,7 @@ const Comments = ({ post }) => (
     <View>
         {post.comments.map((comment, index) => (
             <View style={{ marginTop: 5, flexDirection: 'row' }} comment={comment} key={index}>
-                <Text style={{ color: 'white', fontWeight: '700' }}>{comment.user}
+                <Text style={{ color: 'black', fontWeight: '700' }}>{comment.user}
                     <Text style={{ fontWeight: '500' }}> {comment.comment}</Text>
                 </Text>
             </View>
