@@ -20,7 +20,7 @@ const Profile = ({navigation}) => {
             source={require('../Images/post.png')}
           />
           <View>
-            <Text style={styles.title}>Md Sakib Sarker</Text>
+            <Text style={styles.title}>Sakib Sarker</Text>
             <Text style={styles.caption}>@sakib</Text>
           </View>
         </View>
