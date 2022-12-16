@@ -94,7 +94,7 @@ const Login = ({navigation}) => {
           }}>
           <Text>New to the app?</Text>
           <TouchableOpacity onPress={() => navigation.navigate('Register')}>
-            <Text style={{color: '#AD40AF', fontWeight: '700'}}>Register</Text>
+            <Text style={{color: 'black', fontWeight: '700'}}>Register</Text>
           </TouchableOpacity>
         </View>
       </View>

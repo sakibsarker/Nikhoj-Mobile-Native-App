@@ -6,11 +6,14 @@ const Header = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <TouchableOpacity onPress={() => navigation.push('LoginScreen')}>
-                <Image
+                {/* <Image
                     style={styles.logo}
                     source={
                         require('../assets/images/headerLogo.png')
-                    } />
+                    } /> */}
+                    
+                    <Text style={{color:'black',fontSize:15,fontWeight:'600'}}>Nikhooj</Text>
+                   
             </TouchableOpacity>
             <View style={styles.iconsContainer}>
 
@@ -33,7 +36,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         flexDirection: 'row',
         marginHorizontal: 20,
-        color: "#fff"
+        color: "#fff",
     },
     logo: {
         width: 110,

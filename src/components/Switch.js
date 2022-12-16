@@ -9,19 +9,19 @@ const Switch = () => {
   const moder = [{ label: 'হারানো জিনিস' }, { label: 'পাওয়া জিনিস' }];
   const [found, setFound] = useState(false);
   return (
-    <View style={styles.ViewAlien}>
+    <View>
       <View style={styles.mode}>
         <SwitchSelector
           borderRadius={0}
           borderWidth={0}
           options={moder}
           initial={0}
-          textColor={'black'} //'#7a44cf'
+          textColor={'black'}
           selectedColor={'black'}
           buttonColor={'#f3f3f3'}
           onPress={() => setFound(prev => !prev)}
         />
-      </View>
+      </View >
       {found ? <FoundItems /> : <LostItems />}
     </View>
   );
@@ -31,10 +31,7 @@ const Devicewidth = Math.round(Dimensions.get('window').width);
 const styles = StyleSheet.create({
   mode: {
 
-    width: Devicewidth - 20,
-  },
-  ViewAlien: {
-    alignItems: 'center',
+    width: Devicewidth - 10,
   },
 });
 

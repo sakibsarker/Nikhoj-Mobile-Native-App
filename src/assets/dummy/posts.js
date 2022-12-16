@@ -2,7 +2,7 @@ import { USERS } from './users'
 
 export const LostData = [
     {
-        imageUrl: "https://media.istockphoto.com/photos/aerial-view-of-impressive-na-pali-coast-with-turquoise-water-in-kauai-picture-id1325628101?b=1&k=20&m=1325628101&s=170667a&w=0&h=-IujrcOHxQ2UvAZJmdH5Uk_VRzFJ1anWnKLqBdrrNOM=",
+        imageUrl: "https://images.vivintcdn.com/global/vivint.com/resources/products/smart-lock/lost-keys-keyless-entry.jpg",
         user: USERS[0].user,
         likes: 6074,
         caption: "ড্যাফোডিল এর সুইমিং পুলে খুজে পেয়েছি",
@@ -20,10 +20,10 @@ export const LostData = [
         ],
     },
     {
-        imageUrl: "http://s3.amazonaws.com/quietus_production/images/articles/20803/frank-ocean-blond-compressed-0933daea-f052-40e5-85a4-35e07dac73df_1472114912_crop_550x550.jpg",
+        imageUrl: "https://images.indianexpress.com/2021/02/wallet-1200.jpg?w=389",
         user: USERS[1].user,
         likes: 6074,
-        caption: "Just the usual...🙃 ",
+        caption: "জিনিসটা কার হাতে যেনো দেখছিলাম ",
         profile_picture: USERS[1].image,
         comments: [
             {
@@ -42,7 +42,7 @@ export const LostData = [
 
 export const FoundData = [
     {
-        imageUrl: "https://media.istockphoto.com/photos/aerial-view-of-impressive-na-pali-coast-with-turquoise-water-in-kauai-picture-id1325628101?b=1&k=20&m=1325628101&s=170667a&w=0&h=-IujrcOHxQ2UvAZJmdH5Uk_VRzFJ1anWnKLqBdrrNOM=",
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnOdohoHbu3-fy7RKdI8MmrytDJdkcOnkCIw&usqp=CAU",
         user: USERS[2].user,
         likes: 6074,
         caption: "ড্যাফোডিলে কুড়িয়ে পেয়েছি",
@@ -60,10 +60,10 @@ export const FoundData = [
         ],
     },
     {
-        imageUrl: "http://s3.amazonaws.com/quietus_production/images/articles/20803/frank-ocean-blond-compressed-0933daea-f052-40e5-85a4-35e07dac73df_1472114912_crop_550x550.jpg",
+        imageUrl: "http://talenthunt.daffodilvarsity.edu.bd/images/photo/20.jpg",
         user: USERS[3].user,
         likes: 6074,
-        caption: "Just the usual...🙃 ",
+        caption: "ভাই মনে হয় এইটা আমার ফ্রেন্ডের",
         profile_picture: USERS[3].image,
         comments: [
             {

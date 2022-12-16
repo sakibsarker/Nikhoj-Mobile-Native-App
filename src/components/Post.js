@@ -59,7 +59,7 @@ const PostHeader = ({ post }) => (
     </View>
 )
 const PostImage = ({ post }) => (
-    <View style={{ width: '100%', height: 400, marginTop: 2 }}>
+    <View style={{ width: '100%', height: 200, marginTop: 2 }}>
         <Image
             source={{ uri: post.imageUrl }} style={{ height: '100%', resizeMode: 'cover' }}
         />
@@ -82,7 +82,7 @@ const PostFooter = () => (
                 imgUrl={postFooterIcons[2].imageUrl}
             />
         </View>
-        <View style={{ marginRight: 3 }}>
+        <View style={{ marginRight: 30 }}>
             <Icon
                 imgStyle={styles.postFooter}
                 imgUrl={postFooterIcons[3].imageUrl}
@@ -156,7 +156,9 @@ const styles = StyleSheet.create({
         width: 32,
         height: 32,
         marginTop: 5,
-        marginRight: 1
+        marginRight: 1,
+        backgroundColor:'#28282B',
+        borderRadius:10
     },
     leftPostFooter: {
         flexDirection: 'row',
